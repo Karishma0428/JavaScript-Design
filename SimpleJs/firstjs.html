@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="myfirstjavasript.js "></script>
+    <style>
+       h2{
+         text-align: center;
+       }
+       input{
+         width:100px;
+         height:40px;
+       }
+       .form1{
+         padding:40px;
+         margin-left: 500px;
+       }
+       #from{
+         padding:25px;
+        
+       }
+       button{
+         padding: auto;
+         margin-top: 10px;
+         width:60px;
+         height:20px;
+         background-color: aqua;
+       }
+
+
+       
+  </style>
+  </head>
+  <body>
+    <h2>Select by id</h2>
+    <div class="form1">
+    <input id="from" placeholder="enter the data"</br></br>
+    <button onclick="check()"> submit</button>
+    <p id="to"></p>
+    </div>
+    <script>
+      function check()
+      {
+        //here we get value and store it in box obj,
+       box=document.getElementById("from").value;
+        // that box obj send to the innerhtml
+       document.getElementById("to").innerHTML=box;
+
+
+      }
+
+      </script>
+
+  </body>
+</html>

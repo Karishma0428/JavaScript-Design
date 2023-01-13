@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   /<!--<script src="myfirstjavasript.js "></script> -->
+    <style>
+       h2{
+         text-align: center;
+         color:darkcyan;
+       }
+       input{
+         width:200px;
+         height:20px;
+         margin-top: 30px;
+       }
+       .form1{
+         padding:40px;
+         margin-left: 500px;
+       }
+       
+       button{
+         padding: auto;
+         margin-top: 10px;
+         width:60px;
+         height:20px;
+         background-color: aqua;
+       }
+::placeholder{
+  color:darkred;
+
+}
+
+       
+  </style>
+  </head>
+  <body>
+    <h2>Select by id</h2>
+    <div class="form1">
+    
+      <input placeholder="first name"</br></br>
+      <input  placeholder="last name"</br></br>
+      <input placeholder="country"</br></br>
+    <button onclick="check()"> submit</button>
+    <p></p>
+    <p></p>
+     <p></p>
+    </div>
+    <script>
+      function check()
+      {
+     box=  document.getElementsByTagName("input");
+     data=document.getElementsByTagName("p")
+     /* data[0].innerHTML=box[0].value;
+     data[1].innerHTML=box[1].value;
+     data[2].innerHTML=box[2].value;*/
+
+     for(i=0; i<box.length;i++)
+     {
+      data[i].innerHTML=box[i].value;
+      console.log(i);
+     }
+
+      }
+
+      </script>
+
+  </body>
+</html>
